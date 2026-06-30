@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimenting with JavaScript snippets</title>
+    <script src="JS/main.js"></script>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        alert("\n4: Hello, World!")
+        window.alert("\n5: From internal JavaScript:\nwindow dot alert()");
+        document.write("<br>6: From internal<br>JavaScript:<br>document.write");
+        var B = "This is a string B defined internally in the HTML body";
+        document.write("<br>9: From internal JavaScript: document.write(" + B + ")");
+        document.write("<br><br><br>10: From internal<br>JavaScript:document.write:<br>John\'s precise words were \"Thank You!!!\"");
+
+        var A = "Julius", B = "Ehiemua", C = "Unuabona";
+        document.write("<br><br>11. " + C);
+
+        var D = A + "&nbsp;" + C + "&nbsp;" + B;
+        document.write("<br><br>12. " + D);
+
+
+
+
+    </script>
+    <br>
+    <br>
+    <button onclick="My_First_Function()" id="Button_Text">
+        Click me to change button background and text!
+    </button>
+    <br>
+    <br>
+    <button onclick="Concatenate_Two_Strings('This is the beginning of the string',' and this is the end of the string')" id="Button_Text2">
+        Click me to Concatenate two strings!
+    </button>
+
+</body>
+
+</html>
