@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        h4 {
+            font-size: 18 px;
+            font-weight: bold;
+            text-decoration: underline;
+            color: blue;
+        }
+
+        /*
+        h4{
+            position: relative;
+            top: -20px;
+        }
+        button {
+            position: relative;
+            top: -30px;
+        }
+        */
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Scope and Time Function</h1>
+    <h2>Local and Global Variables</h2>
+    <h3>Two functions AddNumbers1() and AddNumbers2() are used in Case 1.</h3>
+
+    <h4>Case 1. Here, var X is declared as a global variable outside the two functions.</h4>
+    <button onclick="my_Global_Variable()">Click me to see if X is visible to the two functions</button>
+    <p id="scope1"></p>
+    <p id="Add_numbers1"></p>
+    <p id="Add_numbers2"></p>
+
+    <h3>Two functions AddNumbers3() and AddNumbers4() are used in Case 2.</h3>
+    <h4>Case 2. Here, var Y is declared as a local variable inside the function AddNumbers3() but not visible to
+        function AddNumbers4().</h4>
+    <button onclick="my_Local_Variable()">Click me to see if Y is visible to the two functions</button>
+    <p id="scope2"></p>
+    <p id="Add_numbers3"></p>
+    <p id="Add_numbers4"></p>
+
+    <h2>Conditional Statements</h2>
+    <h3>1.The If Statement based on the time of day.</h3>
+    <p style="color: red;">A no response to the "click here" below will occur unless the time of day is earlier than
+        6pm.</p>
+    <p id="Greeting" onclick="get_Date()">Click Here.</p>
+
+    <h3>2. Testing Your Wealthiness.</h3>
+    <h3>2a. The If Statement Assignment.</h3>
+    <p style="color: red;">A no response (inside a &lt;p&gt; tag) below the "Determine" button when you click on the
+        "Determine" button below, means that you are not rich, which could mean you are either poor or middle class.</p>
+    <!--<input id="my_Balance_Input" value="" placeholder="Enter your account balance" type="number" />-->
+    <input id="my_Balance_Input1" placeholder="Enter your account balance here" type="text" size="31" />
+    <button id="myIfStatementAssignment1" onclick="my_If_Statement_Assignment1()">Determine</button>
+    <p id="my_If_Statement_Assignment1"></p>
+
+    <h3>2b. The If-Else Statement Assignment.</h3>
+    <p style="color: red;">Enter your account balance in the input field below and click the "Determine" button to see
+        if you are rich or not rich.</p>
+    <!--<input id="my_Balance_Input" value="" placeholder="Enter your account balance" type="number" />-->
+    <input id="my_Balance_Input2" placeholder="Enter your account balance here" type="text" size="31" />
+    <button id="myIfStatementAssignment2" onclick="my_If_Statement_Assignment2()">Determine</button>
+    <p id="my_If_Statement_Assignment2"></p>
+
+
+    <h3>2c. The If-ElseIf-Else Statement Assignment.</h3>
+    <p style="color: red;">Enter your account balance in the input field below and click the "Determine" button to see if you are rich or not rich.</p>
+    <!--<input id="my_Balance_Input" value="" placeholder="Enter your account balance" type="number" />-->
+    <input id="my_Balance_Input3" placeholder="Enter your account balance here" type="text" size="31" />
+    <button id="myIfStatementAssignment3" onclick="my_If_Statement_Assignment3()">Determine</button>
+    <p id="my_If_Statement_Assignment3"></p>
+
+
+
+
+
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
