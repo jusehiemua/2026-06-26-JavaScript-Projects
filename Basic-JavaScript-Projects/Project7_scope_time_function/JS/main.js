@@ -85,8 +85,8 @@ function my_If_Statement_Assignment3() {
     if (balance_In_my_Account3 >= min_balance_In_A_Rich_Account) {
         document.getElementById("my_If_Statement_Assignment3").innerHTML = "<span style='color: green;'>You are rich because your account balance of $" + balance_In_my_Account3 + " is greater than or equal to the minimum balance of $" + min_balance_In_A_Rich_Account + " for a rich account.</span>";
     } else if (balance_In_my_Account3 <= max_balance_In_A_Poor_Account) {
-        document.getElementById("my_If_Statement_Assignment3").innerHTML = "<span style='color: red;'>You are poor because your account balance of $" + balance_In_my_Account3 + " is less than or equal to the maximum balance of $" + max_balance_In_A_Poor_Account + " for a poor account.</span>";
+        document.getElementById("my_If_Statement_Assignment3").innerHTML = "<span style='color: red; background-color: yellow;'>You are poor because your account balance of $" + balance_In_my_Account3 + " is less than or equal to the maximum balance of $" + max_balance_In_A_Poor_Account + " for a poor account.</span>";
     } else {
-        document.getElementById("my_If_Statement_Assignment3").innerHTML = "<span style='color: blue;'>You are middle class because your account balance of $" + balance_In_my_Account3 + " is neither rich nor poor.</span>";
+        document.getElementById("my_If_Statement_Assignment3").innerHTML = "<span style='color: blue;'>You are middle class because your account balance of $" + balance_In_my_Account3 + " is neither greater than nor equal to the minimum balance of $" + min_balance_In_A_Rich_Account + " for a rich account, nor is it less than or equal to the maximum balance of $" + max_balance_In_A_Poor_Account + " for a poor account.</span>";
     }
 }
