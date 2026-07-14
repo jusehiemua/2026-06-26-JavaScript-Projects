@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>1. JavaScript String Methods</h1>
+    <h2 style="color: green;">1a. The concat() Method</h2>
+    <button onclick="concatenate_parts_into_one_sentence()"><span style="color: red; font-weight: bold; font-size: 16px;">Click here to concatenate strings into one sentence.</span></button>
+    <div id="Concatenate"></div>
+
+    <h2 style="color: green;">1b. The slice() Method</h2>
+    <button onclick="slice_string_into_parts()"><span style="color: red; font-weight: bold; font-size: 16px;">Click here to slice a string.</span></button>
+    <p id="Slice"></p>
+
+    <h1>2. More Methods Challenge</h1>
+    <h2 style="color: green;">2a. toUpperCase() Method</h2>
+    <button onclick="convert_string_to_uppercase()"><span style="color: red; font-weight: bold; font-size: 16px;">Click here to convert a string to uppercase.</span></button>
+    <p id="convertToUpperCase"></p>
+
+    <h2 style="color: green;">2b. The Search() Method</h2>
+    <input type="text" size="55" id="searchInput" placeholder="Enter a substring to search for and click the button to search"><br>
+    <button onclick="search_for_a_substring()"><span style="color: red; font-weight: bold; font-size: 16px;">Click here to search for a substring.</span></button>
+    <p id="searchResult"></p>
+
+    <h1>3. Number Methods</h1>
+    <h2 style="color: green;">3a. Number to String Method</h2>
+    <button onclick="number_to_String()"><span style="color: red; font-weight: bold; font-size: 16px;">Click here to convert a number to a string.</span></button>
+    <p id="numberToString"></p>
+
+    <h2 style="color: green;">3b. To Precision() Method</h2>
+    <input type="text" size="55" id="precisionInput" placeholder="Enter the number of decimal places of precision that you desire"><br>
+    <button onclick="number_to_precision()"><span style="color: red; font-weight: bold; font-size: 16px;">Click here to convert a number to a string with a specific number of decimal places.</span></button>
+    <p id="numberToPrecision"></p>
+
+    <h1>4. New Methods Challenge</h1>
+    <h2 style="color: green;">4a. The toFixed() Method</h2>
+    <input type="text" size="55" id="fixedInput" placeholder="Enter the number of decimal places of precision that you desire"><br>
+    <button onclick="the_toFixed_method()"><span style="color: red; font-weight: bold; font-size: 16px;">Click here to round a number to a specific number of decimal places.</span></button>
+    <p id="toFixedResult"></p>
+
+    <h2 style="color: green;">4b. The valueOf() Method</h2>
+    <button onclick="the_valueOf_method()"><span style="color: red; font-weight: bold; font-size: 16px;">Click here to get the primitive value of a number.</span></button>
+    <p id="valueOfResult"></p>
+
+    <script src="JS/main.js"></script>
+</body>
+
+
+</html>
