@@ -50,7 +50,7 @@ function cat_pics() {
     document.getElementById("Cat").innerHTML = Content;
 }
 
-function immutable() {
+function primitive_immutable() {
     var x = 1;
     document.getElementById("x1").textContent = '<p id=\"x1\"> var x = ' + x + '<\/p>';
     var x = 2;
