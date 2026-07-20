@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sleek Motorbikes is a one-page motorcycle website featuring stylish bikes, photos, video, and a contact form.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Motorbikes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/one_page_website.js" defer></script>
+</head>
+
+<body>
+
+    <header id="home">
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#photos">PHOTOS</a>
+            <a href="#video">VIDEO</a>
+            <a href="#contact">CONTACT US</a>
+        </nav>
+
+        <div class="hero">
+            <h1>Sleek Motorbikes</h1>
+            <p class="tagline">Power, style, and freedom on two wheels.</p>
+            <p>
+                Welcome to <strong>Sleek Motorbikes</strong>, a one-page website created for motorcycle lovers.
+                Our fictional brand celebrates smooth design, strong engines, and the excitement of the open road.
+            </p>
+            <p class="website-url">Website: sleek-motorbikes.com</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Sleek Motorbikes Inc. is a fictional motorcycle company focused on stylish, modern, and powerful bikes.
+                Whether you enjoy sport bikes, cruisers, or futuristic designs, our goal is to celebrate motorcycles
+                that look sharp and perform beautifully.
+            </p>
+            <p>
+                This website is built as a beginner-friendly HTML, CSS, and JavaScript project. It includes navigation
+                bookmarks, images, a video section, and a contact form.
+            </p>
+        </section>
+
+        <section id="photos">
+            <h2>Welcome to the Sleek Motorbike Photo Gallery</h2>
+            <p>
+                <!--Below are sample motorbike images for this assignment. Each image uses an &lt;img&gt; tag.-->
+                Start the Lightbox by clicking on any one of the thumbnails and use the Left and Right arrows to navigate the Lightbox. When you are done, use the "X" at the top right hand corener to exit the lightbox and go back to the main webpage.
+                
+            </p>
+
+            <!--
+            +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            <div class="gallery">
+                <img src="images/motorbike_01.png" alt="Crimson Cruiser motorbike">
+                <img src="images/motorbike_02.png" alt="Midnight Racer motorbike">
+                <img src="images/motorbike_03.png" alt="Emerald Storm motorbike">
+                <img src="images/motorbike_04.png" alt="Golden Bullet motorbike">
+                <img src="images/motorbike_05.png" alt="Silver Phantom motorbike">
+                <img src="images/motorbike_06.png" alt="Blue Thunder motorbike">
+                <img src="images/motorbike_07.png" alt="Orange Velocity motorbike">
+                <img src="images/motorbike_08.png" alt="Ruby Roadster motorbike">
+                <img src="images/motorbike_09.png" alt="Cyber Sprint motorbike">
+                <img src="images/motorbike_10.png" alt="Shadow Glide motorbike">
+            </div>
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+<!--
+        =================================================================================
+        -->
+
+<!--<body>-->
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <!--<img src="img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">-->
+    <img src="images/motorbike_975x650_01.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <!--<img src="images/motorbike_02.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">-->
+    <img src="images/motorbike_975x650_02.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  
+</div>
+  <div class="column">
+    <!--<img src="images/motorbike_03.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">-->
+     <img src="images/motorbike_975x650_03.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+ 
+</div>
+  <div class="column">
+    <!--<img src="images/motorbike_04.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">-->
+      <img src="images/motorbike_975x650_04.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+
+</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/motorbike_1000x350_01.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+       <img src="images/motorbike_1000x350_02.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+            <img src="images/motorbike_1000x350_03.png" style="width:100%">
+
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+            <img src="images/motorbike_1000x350_04.png" style="width:100%">
+
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/motorbike_1000x350_01.png" style="width:100%" onclick="currentSlide(1)" alt="Crimson Cruiser">
+    </div>
+    <div class="column">
+          <img class="demo cursor" src="images/motorbike_1000x350_02.png" style="width:100%" onclick="currentSlide(1)" alt="Midnight Racer">
+    </div>
+    <div class="column">
+          <img class="demo cursor" src="images/motorbike_1000x350_03.png" style="width:100%" onclick="currentSlide(1)" alt="Emerald Storm">
+    </div>
+    <div class="column">
+          <img class="demo cursor" src="images/motorbike_1000x350_04.png" style="width:100%" onclick="currentSlide(1)" alt="Golden Bullet">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!--
+        ==================================================================================
+        -->
+        </section>
+
+        <section id="video">
+            <h2>Featured Motorcycle Video</h2>
+            <p>
+                Watch this embedded motorcycle video using an &lt;iframe&gt; tag.
+            </p>
+
+            <div class="video-box">
+			<!--
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1n4m3fOXG0U"
+                    title="Motorcycle video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+				-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9OdQ3hwTwlc?si=K--KLPgYYrNPTpG5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>				</iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Complete the form below if you want more information about Sleek Motorbikes.
+            </p>
+
+            <form id="contactForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+                <label for="bikeType">Favorite Motorbike Type:</label>
+                <input type="text" id="bikeType" name="bikeType" placeholder="Sport bike, cruiser, touring bike, etc.">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <p id="formMessage"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2026 Sleek Motorbikes Inc. All Rights Reserved.</p>
+        <p>1-234-567-8969</p>
+        <p>support@sleekmotorbikes.com</p>
+    </footer>
+
+</body>
+</html>
