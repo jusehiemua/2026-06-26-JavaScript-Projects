@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple jQuery Test</title>
+    <!-- Load jQuery directly from Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1 id="headline">Click the button below to change this text.</h1>
+    <button id="action-btn">Click Me</button>
+
+    <script>
+        // Ensure JavaScript runs only after the document elements exist
+        $(document).ready(function() {
+            
+            // Listen for a click event on the button
+            $("#action-btn").click(function() {
+                // Directly modify the text inside the h1 element
+                $("#headline").text("Hello! jQuery is working perfectly.");
+            });
+
+        });
+    </script>
+
+</body>
+</html>
+
