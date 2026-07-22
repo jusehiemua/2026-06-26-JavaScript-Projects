@@ -771,3 +771,25 @@ button:hover,
 }
 
 /***** End of Media Query Section *****/
+
+
+/* Normal navbar-tab state */
+.Navbar a {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Active navbar-tab state */
+.Navbar a.active {
+    color: white;
+    background-color: darkgray;
+}
+
+/* Hover state */
+.Navbar a:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+

@@ -45,3 +45,19 @@ document.addEventListener("click", function(event){
         closeForm()
     }
 }, false )
+
+/*********************ACTIVE, VISITED AND HOVER *********************************** */
+
+// Changes the active navbar tab when a tab is clicked
+var navbarLinks = document.querySelectorAll(".Navbar a");
+
+navbarLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+
+        navbarLinks.forEach(function(item) {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+    });
+});
